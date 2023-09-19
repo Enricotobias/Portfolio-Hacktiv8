@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Challenge Hacktiv</title>
+    <link rel="stylesheet" href="../Assets/style.css" type="text/css"/>
+</head>
+<body>
+    <div class="Navbar">
+        <ul>
+            <li><a href="challenge.html">HOME</a></li>
+            <li><a href="product.html">PRODUCT</a></li>
+            <li><a href="gallery.html">GALLERY </a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="inventory.html">MY INVENTORY</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="profil">
+            <div class="PP">
+                <img src="../Assets/avatar.png" alt="Pas Foto Saya">
+            </div>
+            <div class="Identitas">
+                <h3 id="displayNama">Enrico Tobias</h3>
+                <p id="displayRole">Front End Designer</p>
+                <div class="tombol">
+                    <button class="Kontak">Kontak</button>
+                    <button class="Resume">Resume</button>
+                </div>
+            </div>
+        </div>
+        <div class="status">
+            <div class="status-kiri">
+                <h4>Availability</h4>
+                <h4>Usia</h4>
+                <h4>Lokasi</h4>
+                <h4>Pengalaman</h4>
+                <h4>Email</h4>
+            </div>
+            <div class="status-kanan">
+                <p id= "displayAva">Full Time</p>
+                <p id="displayAge">19</p>
+                <p id="displayLoc">Jakarta</p>
+                <p id="displayExp">2</p>
+                <p id="displayEmail">icotobias@gmail.com</p>
+            </div>
+        </div>
+        <div>
+        </div>
+    </div>
+    <form name = "myForm" id ="myForm" onsubmit="return false">
+        <label for="nameInput"><h4>Nama</h4></label>
+        <input type="text" id="nameInput" placeholder="ketik nama anda disini">
+        <br>
+        <label for="role"><h4>Role</h4></label>
+        <input type="text" id="role">
+        <br>
+        <label for="kesediaan"><h4>Availability</h4></label>
+        <input type="text" id="kesediaan">
+        <br>
+        <label for="age"><h4>Usia</h4></label>
+        <input type="text" id="age">
+        <br>
+        <label for="location"><h4>Lokasi</h4></label>
+        <input type="text" id="location">
+        <br>
+        <label for="exp"><h4>Year Experience</h4></label>
+        <input type="text" id="exp">
+        <br>
+        <label for="email"><h4>Email</h4></label>
+        <input type="text" id="email">
+        <br>
+        <input type="submit" value="Kirimkan Data" onclick="onSubmit()">
+    </form>
+    <script src="../Assets/inputData.js" ></script>
+</body>
+</html>
